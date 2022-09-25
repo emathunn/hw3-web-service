@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esther Mathunny's HW3</title>
+</head>
+<body>
+<h1>Esther Mathunny's HW3</h1>
+<div class="container"></div>
+<script>
+    const body = document.body;
+
+fetch('/version')
+    .then((response) => response.json())
+    .then((data) => body.append(data[0].version));
+</script>
